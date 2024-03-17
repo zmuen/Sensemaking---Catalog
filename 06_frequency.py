@@ -17,7 +17,7 @@ with open('titles.json') as file:
 def clean_word(word):
     word = re.sub(r'[^A-Za-z\s]', '', word) 
     word = word.strip() 
-    if word.lower() == 'the' or word[0].islower():
+    if word and (word.lower() == 'the' or word[0].islower()):
         return ''
     return word
 

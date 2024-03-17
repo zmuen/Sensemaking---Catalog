@@ -14,5 +14,6 @@ with open('titles.json', 'r') as file:
 # Clean the data using regular expressions
 cleaned_data = re.sub(r'\W+', ' ', data)
 
-# Print the cleaned data
-print(cleaned_data)
+# Save the cleaned data back to the json file
+with open('titles_cleaned.json', 'w') as file:
+    file.write(cleaned_data)
