@@ -3,9 +3,6 @@
 # 
 #  Objective: Perform a word frequency count 
 #  on the course titles.
-# 
-#  Tools/Resources: You can use a “map reduce” 
-#  style word counting approach.
 # -----------------------------------------------
 
 from collections import Counter, defaultdict
